@@ -5,7 +5,6 @@ set guicursor=
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
-set expandtab
 set smartindent
 set nohlsearch
 set nowrap
@@ -48,13 +47,10 @@ Plug 'mfussenegger/nvim-jdtls'
 Plug 'preservim/nerdcommenter'
 
 " Colorscheme
-Plug 'lifepillar/vim-gruvbox8'
+Plug 'owickstrom/vim-colors-paramount'
 
 " Indent lines
 Plug 'yggdroot/indentline'
-
-" Spaceline
-Plug 'glepnir/spaceline.vim'
 
 " CSS color highlight
 Plug 'ap/vim-css-color' 
@@ -76,9 +72,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rehash256 = 1
 
 " Theme
-colorscheme gruvbox8_hard
-let g:spaceline_colorscheme = 'dracula'
-let g:spaceline_seperate_style = 'slant'
+colorscheme paramount
 
 " COC diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
