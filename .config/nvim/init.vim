@@ -5,7 +5,6 @@ set guicursor=
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
-set expandtab
 set smartindent
 set nohlsearch
 set nowrap
@@ -48,16 +47,19 @@ Plug 'mfussenegger/nvim-jdtls'
 Plug 'preservim/nerdcommenter'
 
 " Colorscheme
-Plug 'owickstrom/vim-colors-paramount'
+Plug 'w0ng/vim-hybrid'
 
 " Indent lines
 Plug 'yggdroot/indentline'
+
+" Spaceline
+Plug 'glepnir/spaceline.vim'
 
 " CSS color highlight
 Plug 'ap/vim-css-color' 
 
 " Treesitter
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Better icons - always last
 Plug 'ryanoasis/vim-devicons'
@@ -73,7 +75,9 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rehash256 = 1
 
 " Theme
-colorscheme paramount
+colorscheme hybrid
+let g:spaceline_colorscheme = 'one'
+let g:spaceline_seperate_style = 'slant'
 
 " COC diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
@@ -91,7 +95,7 @@ nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
 let g:indentLine_char_list = ['|', '|', '|', '|']
 
 " Auto load tree sitter syntax 
-lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+"lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
 " Telescope keybinds
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
