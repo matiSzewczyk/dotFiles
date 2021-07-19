@@ -78,6 +78,7 @@ let g:rehash256 = 1
 colorscheme hybrid
 let g:spaceline_colorscheme = 'one'
 let g:spaceline_seperate_style = 'slant'
+hi Normal guibg=none
 
 " COC diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
