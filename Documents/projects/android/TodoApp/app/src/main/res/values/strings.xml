@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">TodoApp</string>
-    <string name="addBtnPlus">+</string>
-    <string name="taskInputText">Your next task :)</string>
-</resources>
