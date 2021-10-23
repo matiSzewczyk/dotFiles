@@ -32,7 +32,7 @@ set completeopt=menuone,noinsert,noselect
 call plug#begin('~/.vim/plugged')
 
 " Autocompletion
-Plug 'neoclide/coc.nvim', {'branch:': 'release'} 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Easier navigation in files for big projects
 Plug 'preservim/nerdtree' 
@@ -79,6 +79,7 @@ colorscheme darcula
 let g:spaceline_colorscheme = 'one'
 let g:spaceline_seperate_style = 'slant'
 hi Normal guibg=none
+hi LineNr guibg=none
 
 " COC diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
@@ -103,4 +104,6 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+
 
