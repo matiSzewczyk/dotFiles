@@ -47,7 +47,7 @@ Plug 'mfussenegger/nvim-jdtls'
 Plug 'preservim/nerdcommenter'
 
 " Colorscheme
-Plug 'w0ng/vim-hybrid'
+Plug 'doums/darcula'
 
 " Indent lines
 Plug 'yggdroot/indentline'
@@ -59,7 +59,7 @@ Plug 'glepnir/spaceline.vim'
 Plug 'ap/vim-css-color' 
 
 " Treesitter
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Better icons - always last
 Plug 'ryanoasis/vim-devicons'
@@ -75,7 +75,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rehash256 = 1
 
 " Theme
-colorscheme hybrid
+colorscheme darcula
 let g:spaceline_colorscheme = 'one'
 let g:spaceline_seperate_style = 'slant'
 hi Normal guibg=none
@@ -96,7 +96,7 @@ nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>
 let g:indentLine_char_list = ['|', '|', '|', '|']
 
 " Auto load tree sitter syntax 
-"lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+lua require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 
 " Telescope keybinds
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
