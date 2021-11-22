@@ -199,32 +199,11 @@ bar {
 
 exec_always xrandr --output DP-1 --auto --left-of HDMI-0 --primary
 
-# One dark theme
-# class                 border  backgr. text    indicator child_border
-#client.focused          #E06C75 #E06C75 #E06C75 #E06C75   #E06C75 
-#client.focused_inactive #333333 #222222 #ffffff #484e50   #3e4452 
-#client.unfocused        #333333 #222222 #888888 #292d2e   #3e4452
-#client.urgent           #2f343a #900000 #ffffff #900000   #900000
-#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-# colour of border, background, text, indicator, and child_border
-client.focused              #bf616a #2f343f #d8dee8 #bf616a #d8dee8
-client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
-client.background           #2f343f
-
-
 for_window [class=".*"] border pixel 2
-#gaps inner 20
-#gaps outer 1
-#smart_gaps on
 
 exec_always --no-startup-id feh --bg-scale ~/Documents/wallpaper/wallpaper.jpg
-#exec_always --no-startup-id picom -b
 # screenshots
 bindsym Print exec gnome-screenshot -i
 bindsym $mod+Print exec gnome-screenshot -a
-focus_follows_mouse no
 
-#exec ~/.config/polybar/launch.sh
+focus_follows_mouse no
