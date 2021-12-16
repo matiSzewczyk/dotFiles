@@ -23,8 +23,8 @@ filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 
 " Use <Tab> and <S-Tab> to navigate through completion menu
-inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+"inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
@@ -47,7 +47,7 @@ Plug 'mfussenegger/nvim-jdtls'
 Plug 'preservim/nerdcommenter'
 
 " Colorscheme
-Plug 'doums/darcula'
+Plug 'fratajczak/one-monokai-vim'
 
 " Indent lines
 Plug 'yggdroot/indentline'
@@ -75,7 +75,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:rehash256 = 1
 
 " Theme
-colorscheme darcula
+colorscheme one-monokai
 let g:spaceline_colorscheme = 'one'
 let g:spaceline_seperate_style = 'slant'
 hi Normal guibg=none
@@ -104,6 +104,4 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-
-
 
