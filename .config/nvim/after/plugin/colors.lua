@@ -1,5 +1,5 @@
 function setColors(color)
-    color = color or "github_dark_dimmed"
+    color = color or "badwolf"
     vim.cmd.colorscheme(color)
 end
 

@@ -55,4 +55,6 @@ return require('packer').startup(function(use)
 
     -- Conform (formatting)
     use { "stevearc/conform.nvim" }
+
+    use { "sjl/badwolf" }
 end)
