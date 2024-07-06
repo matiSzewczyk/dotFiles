@@ -1,0 +1,15 @@
+[window]
+decorations = "Buttonless"
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrains Mono"
+
+[env]
+term = "xterm-256color"
